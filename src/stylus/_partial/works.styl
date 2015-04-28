@@ -1,0 +1,28 @@
+.works
+  padding 60px 0
+  &-list
+    margin-right -(10% / 3)
+    margin-left @margin-right
+    @extend $clearfix
+    .work
+      @extend $slab-font
+      float left
+      width (100% / 3)
+      padding-left 3%
+      padding-right @padding-left
+      .cover
+        background-size cover
+        background-repeat no-repeat
+        width 100%
+        min-height 270px
+      &-title
+        color $base-color
+        margin-top 15px
+      &-type
+        color #a8a8a8
+        font-size .85rem
+        margin-top 10px
+      &-desc
+        color #5c5c5c
+        @extend $base-font
+        line-height 1.8

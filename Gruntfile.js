@@ -35,10 +35,25 @@ module.exports = function(grunt) {
       		"src/index.html": ["src/jade/*.jade"]
     		}
   		}
+		},
+		imagemin: {
+			png: {
+				options: {
+					optimizationLevel: 7,
+					cache: false
+				},
+				files: [{
+					expand: true,
+					cwd: 'src/img',
+					src: ['**/*.{png,jpg}', '!min/'],
+					dest: 'src/img/min'
+				}]
+			}
 		}
 	});
 
-	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	// require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', ['stylus', 'jade', 'watch']);
 };

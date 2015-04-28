@@ -1,0 +1,33 @@
+.features
+  padding-top 60px
+  &-list
+    @extend $clearfix
+    padding-bottom 58px
+    border-bottom 2px solid rgba(0, 0, 0, 0.11)
+  .feature
+    float left
+    width 25%
+    padding-left 15px
+    padding-right @padding-left
+    text-align center
+    .icon
+      width 90px
+      height @width
+      border-radius 50%
+      margin auto
+      &.icon-light
+        background #9d9abf url('../img/icons/light.png') no-repeat center center
+      &.icon-clock
+        background #d2514b url('../img/icons/clock.png') no-repeat center center
+      &.icon-chem
+        background #66a3c6 url('../img/icons/chem.png') no-repeat center center
+      &.icon-money
+        background #e8c04f url('../img/icons/money.png') no-repeat center center
+    &-title
+      @extend $slab-font
+      color $base-color
+    &-desc
+      color #616161
+      font-size 1rem
+      padding 0 15px
+      line-height 1.5

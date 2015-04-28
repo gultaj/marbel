@@ -1,0 +1,25 @@
+.header
+  height 120px
+  line-height 75px
+  &-logo
+    float left
+    a
+      @extend $condensed-font, $upper
+      display inline-block
+      font-size 3rem
+      letter-spacing -3px
+      line-height 120px - 10
+  &-nav
+    float right
+    li
+      display inline-block
+      @extend $upper
+      &.current a
+        color #1abb9c
+      a
+        @extend $condensed-font
+        padding 30px 10px
+        font-size 1.1rem
+
+  .in
+    @extend $clearfix

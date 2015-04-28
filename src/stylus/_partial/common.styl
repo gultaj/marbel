@@ -1,0 +1,74 @@
+*
+  box-sizing border-box
+
+body
+  @extend $base-font
+  background #e5e5e5
+
+a
+  text-decoration none
+  color $base-color
+
+ul
+  list-style none
+
+.in
+  margin 0 13%
+
+.btn
+  padding 15px 25px
+  border-radius 3px
+  text-transform uppercase
+  @extend $base-font
+  font-size .9rem
+  &-primary
+    background #3f8dbf
+    color #fff
+    box-shadow 0 5px 0 0 darken(@background, 20%)
+    padding-bottom 10px
+    &:hover
+      background darken(#3f8dbf, 10%)
+
+.hero
+  background url('../img/hero.jpg') no-repeat
+  background-size 100%
+  height 600px
+  text-align center
+  @extend $slab-font
+  &-title
+    color #f3f3f3
+    font-size 2.8rem
+    padding-top 180px
+    // text-align center
+  &-desc
+    color #a8a8a8
+    font-size 2.3rem
+    font-weight 700
+    padding-bottom 30px
+
+.quote
+  background rgba(0, 0, 0, 0.03)
+  color #a1a1a1
+  @extend $slab-font
+  font-size 1.3rem
+  text-align center
+  padding 60px 0
+  .icon
+    width 40px
+    height @width
+    margin auto
+    background url('../img/icons/quotes.png') no-repeat center center
+    opacity .6
+    margin-bottom 20px
+  &-text
+    width 80%
+    margin auto
+
+h1, h2, h3
+  margin 0
+
+.section-title
+  @extend $condensed-font, $upper
+  color $base-color
+  font-size 1.2rem
+  padding-bottom 25px

@@ -2,6 +2,8 @@ doctype html
 html(lang="en")
   head
     title Example
+    link(href='http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700|Roboto+Slab:400,700' rel='stylesheet' type='text/css')
+    link(rel='stylesheet', href='css/style.css')
   body
     include _partials/header.jade
     
@@ -9,7 +11,7 @@ html(lang="en")
       .in
         h1.hero-title We are a digital & branding agency based in London.
         p.hero-desc We love to turn great ideas into beautiful products.
-        a.btn.btn-primary see Portfolio
+        a.btn.btn-primary(href="#") see Portfolio
         
     include _partials/features.jade
     

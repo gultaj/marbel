@@ -2,19 +2,21 @@
 <html lang="en">
   <head>
     <title>Example</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700|Roboto+Slab:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="in">
-        <div class="header-logo"><a>Marbel</a></div>
+        <div class="header-logo"><a href="/">Marbel</a></div>
         <nav class="header-nav">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Journal</li>
-            <li>Service</li>
-            <li>Features</li>
-            <li> Contact</li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -22,48 +24,53 @@
     <section class="hero">
       <div class="in">
         <h1 class="hero-title">We are a digital & branding agency based in London.</h1>
-        <p class="hero-desc">We love to turn great ideas into beautiful products.</p><a class="btn btn-primary">see Portfolio</a>
+        <p class="hero-desc">We love to turn great ideas into beautiful products.</p><a href="#" class="btn btn-primary">see Portfolio</a>
       </div>
     </section>
     <section class="features">
-      <div class="in feature-list">
-        <div class="feature">   
-          <div class="icon pellentesque"></div>
-          <h3 class="feature-title">Pellentesque</h3>
-          <p class="feature-desc">Nulla vitae  libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
-        </div>
-        <div class="feature"> 
-          <div class="icon consectetur"></div>
-          <h3 class="feature-title">Consectetur</h3>
-          <p class="feature-desc">Vestibulum id ligula porta  euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
-        </div>
-        <div class="feature"> 
-          <div class="icon tristiquet"></div>
-          <h3 class="feature-title">Tristiquet</h3>
-          <p class="feature-desc">Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.</p>
-        </div>
-        <div class="feature">
-          <div class="icon fermentum"></div>
-          <h3 class="feature-title">Fermentum</h3>
-          <p class="feature-desc">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.</p>
+      <div class="in">
+        <div class="features-list">
+          <div class="feature">   
+            <div class="icon icon-light"></div>
+            <h3 class="feature-title">Pellentesque</h3>
+            <p class="feature-desc">Nulla vitae  libero, a pharetra augue. Integer posuere erat a ante venenatis condimentum velit dapibus.</p>
+          </div>
+          <div class="feature"> 
+            <div class="icon icon-clock"></div>
+            <h3 class="feature-title">Consectetur</h3>
+            <p class="feature-desc">Vestibulum id ligula porta  euismod semper. Aenean lacinia bibendum nulla sed consectetur dui.</p>
+          </div>
+          <div class="feature"> 
+            <div class="icon icon-chem"></div>
+            <h3 class="feature-title">Tristiquet</h3>
+            <p class="feature-desc">Fusce dapibus, cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo risus.</p>
+          </div>
+          <div class="feature">
+            <div class="icon icon-money"></div>
+            <h3 class="feature-title">Fermentum</h3>
+            <p class="feature-desc">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="works">
       <div class="in">
-        <h2 class="section-title">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum sagittis lacus mollis.</h2>
-        <div class="work-list">
-          <div class="work"><img src="img/nobis.jpg">
+        <h2 class="section-title">Our Latest Works</h2>
+        <div class="works-list">
+          <div class="work">
+            <div style="background-image: url('img/nobis.jpg')" class="cover"></div>
             <h3 class="work-title">Nobis Business Card</h3>
             <p class="work-type">Business Card, Graphic</p>
             <p class="work-desc">Sed posuere consectetur est at lobortis. Porta sagittis lacus vel augue laoreet rutrum.</p>
           </div>
-          <div class="work"><img src="img/fun.jpg">
+          <div class="work">
+            <div style="background-image: url('img/fun.jpg')" class="cover"></div>
             <h3 class="work-title">New Fun Project</h3>
             <p class="work-type">Web Design, Application</p>
             <p class="work-desc">Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Vestibulum id ligula porta felis.</p>
           </div>
-          <div class="work"><img src="img/cover.jpg">
+          <div class="work">
+            <div style="background-image: url('img/cover.jpg')" class="cover"></div>
             <h3 class="work-title">Passionaries Branding Cover</h3>
             <p class="work-type">Branding, Graphic Design</p>
             <p class="work-desc">Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus.</p>
@@ -80,22 +87,23 @@
     <footer class="footer">
       <div class="in">
         <div class="info">
-          <div class="contact">
+          <div class="col contact">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-text"></p>
-            <div class="icon address">
+            <p class="contact-text">Fusce dapibus, tellus commodo, tortor mauris condimentum utellus fermentum, porta sem malesuada magna.</p>
+            <div class="icon icon-location">
               <Moonshine>Street No: 14/05<br> Light City, Jupiter</Moonshine>
             </div>
-            <div class="icon phone">0247 541 65 87</div>
-            <div class="icon email">support@longwave.com</div>
+            <div class="icon icon-phone">0247 541 65 87</div>
+            <div class="icon icon-email">support@longwave.com</div>
           </div>
-          <div class="twitter">
+          <div class="col twitter">
             <h2 class="section-title">Twitter</h2>
             <div class="twitt">Aenean lacinia bibendum nulla sed leo posuere erat a ante venenatis dapibus posuere velit aliquet.</div>
             <div class="twitt">Donec ullamcorper metus auctor fringilla. Nullam quis risus eget.</div>
             <div class="twitt">Vestibulum id ligula porta  euismod semper. Maecenas faucibus mollis.</div>
           </div>
-          <div class="popular">
+          <div class="col popular">
+            <h2 class="section-title">Popular Posts</h2>
             <div class="post">
               <p>Vivamus sagittis lacus vel augue laoreet rutrum dolor auctor.</p>
               <p class="date">14 Nov, 2012</p>
@@ -112,7 +120,8 @@
               <p class="date">15 July, 2012</p>
             </div>
           </div>
-          <div class="about">
+          <div class="col about">
+            <h2 class="section-title">About Us</h2>
             <p>
               Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, 
               nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
