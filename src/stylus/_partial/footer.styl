@@ -2,6 +2,7 @@
   background #1C1C1C
   color #cacaca
   font-size .9rem
+  line-height 1.2
   .section-title
     color #6c6c6c
     padding-bottom 15px
@@ -12,10 +13,31 @@
     line-height 1.5
     p
       margin 0
+      margin-bottom 20px
     .col
       float left
       width 25%
       padding 0 25px
+    .location
+      background url('../img/icons/location.png') no-repeat left 10%
+      padding-left 25px
+    .email
+      background url('../img/icons/email.png') no-repeat left center
+      padding-left 25px
+    .phone
+      background url('../img/icons/phone.png') no-repeat left center
+      padding-left 25px
   .copyright
     border-top 2px solid rgba(255, 255, 255, 0.11)
     padding 30px 0 10px
+  .popular
+    .post p:first-child
+      margin-bottom 0px
+    .date
+      @extend $slab-font
+      font-size .75rem
+  .twitter
+    .twitt
+      margin-bottom 20px
+      padding-left 25px
+      background url('../img/icons/twitter.png') no-repeat left 10%
