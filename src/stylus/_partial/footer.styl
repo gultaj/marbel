@@ -1,3 +1,14 @@
+$small_icon
+  padding-left 25px
+  position relative
+  &:before
+    position absolute
+    top 3px
+    left 0
+    content ''
+    width 20px
+    height @width
+
 .footer
   background #1C1C1C
   color #cacaca
@@ -19,14 +30,22 @@
       width 25%
       padding 0 25px
     .location
-      background url('../img/icons/location.png') no-repeat left 10%
-      padding-left 25px
+      @extend $small_icon
+      &:before
+        @extend $icon
+        spritePosition($location)
     .email
-      background url('../img/icons/email.png') no-repeat left center
-      padding-left 25px
+      @extend $small_icon
+      &:before
+        @extend $icon
+        spritePosition($email)
+        top 40%
     .phone
-      background url('../img/icons/phone.png') no-repeat left center
-      padding-left 25px
+      @extend $small_icon
+      &:before
+        @extend $icon
+        spritePosition($phone)
+        top 20%
   .copyright
     border-top 2px solid rgba(255, 255, 255, 0.11)
     padding 30px 0 10px
@@ -39,5 +58,8 @@
   .twitter
     .twitt
       margin-bottom 20px
-      padding-left 25px
-      background url('../img/icons/twitter.png') no-repeat left 10%
+      @extend $small_icon
+      &:before
+        @extend $icon
+        spritePosition($twitter)
+        top 8%

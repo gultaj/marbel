@@ -57,7 +57,9 @@ ul
     width 40px
     height @width
     margin auto
-    background url('../img/icons/quotes.png') no-repeat center center
+    @extend $icon
+    spritePosition($quotes)
+    // background url('../img/icons/quotes.png') no-repeat center center
     opacity .6
     margin-bottom 20px
   &-text

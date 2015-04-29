@@ -11,18 +11,23 @@
     padding-right @padding-left
     text-align center
     .icon
-      width 90px
+      @extend $icon
+      width: w = 90px
       height @width
       border-radius 50%
       margin auto
       &.icon-light
-        background #9d9abf url('../img/icons/light.png') no-repeat center center
+        background-color #9d9abf
+        spriteP($light, w)
       &.icon-clock
-        background #d2514b url('../img/icons/clock.png') no-repeat center center
+        background-color #d2514b
+        spriteP($clock, w)
       &.icon-chem
-        background #66a3c6 url('../img/icons/chem.png') no-repeat center center
+        background-color #66a3c6
+        spriteP($chem, w)
       &.icon-money
-        background #e8c04f url('../img/icons/money.png') no-repeat center center
+        background-color #e8c04f
+        spriteP($money, w)
     &-title
       @extend $slab-font
       color $base-color

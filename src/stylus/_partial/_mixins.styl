@@ -1,0 +1,10 @@
+spriteX($sprite, $offset)
+  $sprite[2] + ($offset - $sprite[4]) / 2
+
+
+spriteY($sprite, $offset)
+  $sprite[3] + ($offset - $sprite[5]) / 2
+
+spriteP($sprite, $offset = 0) {
+  background-position: spriteX($sprite, $offset) spriteY($sprite, $offset)
+}
